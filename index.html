@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alfiya Gita Pramadani">
+<meta name="dcterms.date" content="2023-01-20">
+
+<title>Hubungan Nilai Ekspor-Impor dan Total PDB Indonesia</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Hubungan Nilai Ekspor-Impor dan Total PDB Indonesia</h1>
+<p class="subtitle lead">Mata Kuliah Metodologi Penelitian, Program Studi Perdagangan Internasional Wilayah ASEAN dan RRT Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alfiya Gita Pramadani </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 20, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar Belakang</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fishbone%20PDB.png.png" width="288" height="191" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">images</figcaption><p></p>
+</figure>
+</div>
+<p>Produk Domestik Bruto (PDB) adalah hasil tambah dari seluruh nilai produksi atas barang dan jasa di suatu negara dalam periode tertentu. Produk Domestik Bruto terdiri atas nilai konsumsi rumah tangga, investasi, pengeluaran pemerintah, dan nilai ekspor yang dikurang dengan nilai impor (<em>net-export</em>). Dalam perekonomian Indonesia, PDB dapat menjadi tolok ukur untuk meninjau sejauh mana perekonomian Indonesia telah tumbuh. Perekonomian negara dipengaruhi oleh berbagai faktor, termasuk juga kegiatan ekspor dan impor yang telah dilakukan. Impor merupakan kegiatan memasukkan barang dari luar daerah pabean ke dalam daerah pabean dengan memperhatikan kebijakan yang berlaku. Sedangkan ekspor merupakan kegiatan mengeluarkan barang dari dalam daerah pabean ke luar daerah pabean dengan memperhatikan regulasi yang telah ditetapkan.</p>
+<p>Bagi Indonesia, kegiatan ekspor sangatlah penting untuk menunjang perekonomian negara sebab sumber daya yang dimiliki Indonesia cukup berpotensial. Di lain sisi, impor juga tak kalah penting sebab tidak semua aspek produksi di Indonesia dapat dimaksimalkan. Pertumbuhan ekspor dan impor mampu mempengaruhi pertumbuhan PDB secara signifikan dikarenakan nilai kegiatan perdagangan internasional yang cukup tinggi yang dapat menambah pendapatan negara.</p>
+</section>
+<section id="batasan-masalah" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="batasan-masalah"><span class="header-section-number">1.2</span> Batasan Masalah</h3>
+<p>Batasan masalah digunakan untuk menghindari adanya perluasan pembahasan yang dapat menyimpang dari topik yang akan dibahas oleh peneliti dan memudahkan peneliti dalam pembahasan masalah yang akan diangkat sehingga tujuan dari penelitian ini akan tercapai dengan baik. Beberapa batasan masalah dalam penelitian ini adalah sebagai berikut:</p>
+<ol type="1">
+<li><p>Ruang lingkup pembahasan hanya meliputi nilai ekspor impor dan total PDB Indonesia selama beberapa tahun.</p></li>
+<li><p>Penelitian ini membahas mengenai pengaruh dan hubungan antara pertumbuhan nilai ekspor impor dengan pertumbuhan total PDB Indonesia.</p></li>
+<li><p>Data dan informasi yang digunakan dalam penelitian didapatkan dengan menggunakan metode penelitian kualitatif dengan bersumber pada sumber data sekunder.</p></li>
+</ol>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan Masalah</h3>
+<p>Berdasarkan latar belakang dan batasan masalah yang telah dijelaskan di atas, maka rumusan masalah dalam penelitian ini adalah sebagai berikut:</p>
+<ol type="1">
+<li><p>Berapa nilai ekspor impor dan total PDB Indonesia selama 2010 – 2021?</p></li>
+<li><p>Seberapa berpengaruh nilai ekspor impor terhadap total PDB Indonesia?</p></li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan Manfaat Penelitian</h3>
+<p>Tujuan dari penelitian ini adalah untuk mengetahui pentingnya kegiatan perdagangan internasional terhadap pertumbuhan ekonomi Indonesia yang dibuktikan dengan meneliti hubungan antara nilai ekspor impor Indonesia dengan total PDB Indonesia selama beberapa tahun. Adapun manfaat yang diperoleh dari penelitian ini adalah sebagai berikut:</p>
+<ol type="1">
+<li>Bagi Peneliti</li>
+</ol>
+<p>Menambah wawasan mengenai perdagangan internasional yang telah dilakukan oleh Indonesia dan mengetahui seberapa jauh perekonomian Indonesia telah tumbuh.</p>
+<ol start="2" type="1">
+<li>Bagi Pembaca</li>
+</ol>
+<p>Memberikan informasi mengenai keterkaitan kegiatan perdagangan internasional dengan pertumbuhan ekonomi Indonesia.</p>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> <em>Package</em></h3>
+<p>Pada penelitian ini, peneliti menggunakan <em>packages</em> antara lain:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi Pustaka</h2>
+<section id="pengertian-perdagangan-internasional" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="pengertian-perdagangan-internasional"><span class="header-section-number">2.1</span> Pengertian Perdagangan Internasional</h3>
+<p>Menurut Setiawan dan Lestari (2011:1), perdagangan internasional adalah perdagangan yang dilakukan oleh penduduk suatu negara dengan penduduk negara lain atas dasar kesepakatan bersama. Sedangkan menurut Eddie Rinaldy,dkk. (2020), perdagangan internasional adalah hubungan perniagaan antara para pihak yang berada di dua negara yang berbeda, secara garis besar dilakukan dalam bentuk ekspor dan impor. Berdasarkan dua teori tersebut dapat disimpulkan bahwa perdagangan internasional merupakan kegiatan perdagangan yang dilakukan lintas negara dalam bentuk ekspor dan impor.</p>
+</section>
+<section id="pengertian-ekspor-dan-impor" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="pengertian-ekspor-dan-impor"><span class="header-section-number">2.2</span> Pengertian Ekspor dan Impor</h3>
+<p>Menurut Sukirno (2008), ekspor adalah pembelian negara lain atas barang buatan perusahaan-perusahaan di dalam negeri. Faktor terpenting yang menentukan ekspor adalah kemampuan dari negara tersebut untuk mengeluarkan barang-barang yang dapat bersaing dalam pasaran luar negeri. Pendapat lain disampaikan oleh Roselyn Hutabarat (1996:306), yang menyatakan bahwa ekspor adalah kegiatan perdagangan dengan cara mengeluarkan barang dari dalam negeri ke luar wilayah pabean Indonesia dengan memenuhi ketentuan yang berlaku. Sedangkan pengertian impor menurut Marolop Tandjung (2011:379), impor adalah kegiatan perdagangan dengan cara memasukkan barang dari luar negeri ke dalam daerah pabean Indonesia sesuai dengan ketentuan peraturan dan perundang-undangan yang berlaku. Selain itu, menurut Susilo Utomo (2008:101), impor adalah suatu kegiatan memasukkan barang dari luar negeri ke dalam wilayah pabeean di dalam negeri yang dilakukan oleh perwakilan dari kedua negara, baik perorangan maupun perusahaan.</p>
+<p>Mengacu pada berbagai teori di atas, dapat diketahui bahwa ekspor dan impor merupakan kegiatan mengeluarkan dan memasukkan barang ke dalam dan ke luar daerah pabean Indonesia sesuai dengan ketentuan peraturan yang telah berlaku yang dilakukan oleh seluruh pihak yang berada di dalam maupun luar negeri atas nama perorangan maupun perusahaan.</p>
+</section>
+<section id="pengertian-produk-domestik-bruto-pdb" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="pengertian-produk-domestik-bruto-pdb"><span class="header-section-number">2.3</span> Pengertian Produk Domestik Bruto (PDB)</h3>
+<p>Menurut Sadono (2010:34), PDB adalah nilai keseluruhan semua barang dan jasa yang diproduksi di dalam wilayah tersebut dalam jangka waktu tertentu (biasanya per tahun). PDB menghitung hasil produksi suatu perekonomian tanpa memperhatikan siapa pemilik faktor produksi tersebut. Sedangkan menurut Herlambang, dkk. (2001:22), <em>Gross Domestic Product</em> (GDP) atau Produk Domestik Bruto (PDB) adalah total pendapatan yang dihasilkan di dalam suatu negara, termasuk pendapatan orang asing yang bekerja di dalam suatu negara. PDB mengukur nilai barang dan jasa yang diproduksi di suatu wilayah negara (domestik) tanpa membedakan kewarganegaraan pada suatu periode tertentu. Dapat disimpulkan bahwa PDB merupakan penghasilan yang didapatkan negara atas seluruh kegiatan produksi barang dan jasa di dalam negeri dalam periode waktu tertentu.</p>
+</section>
+<section id="kerangka-penelitian" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="kerangka-penelitian"><span class="header-section-number">2.4</span> Kerangka Penelitian</h3>
+<p>Untuk menunjang pertumbuhan ekonomi yang semakin baik pemerintah selalu berupaya untuk meningkatkan pendapatan negara dengan berbagai aspek, salah satunya dengan terus meningkatkan kegiatan ekspor dan impor. Kenaikan nilai dari ekspor dan impor sangat mempengaruhi pertumbuhan PDB per tahun Indonesia, meskipun PDB bukan hanya dipengaruhi oleh ekspor dan impor saja melainkan konsumsi dari pemerintah, konsumsi rumah tangga, dan juga investasi. Namun, secara tidak langsung ekspor dan impor turut mempengaruhi ketiganya sebab berkaitan dengan ketersediaan barang atas permintaan konsumen terhadap barang impor hingga kegiatan ekspor yang dilakukan oleh perorangan atau swasta yang berdampak pada pendapatan pelaku ekspor. Di dalam kegiatan ekonomi, semua pelaku dan faktor ekonomi saling berkaitan. Pada setiap periode, nilai ekspor dan impor tidak selalu mengalami kenaikan. Kenaikan atau penurunan nilai tersebut dipengaruhi oleh beberapa faktor seperti kondisi perekonomian dunia hingga wabah global yang sempat terjadi pada tahun 2020-2021. Total PDB pun tak selalu mengalami kenaikan. Ketika PDB naik, belum tentu nilai ekspor dan impor naik pula. Namun ketika nilai ekspor naik, sangat besar kemungkinan total PDB turut naik.</p>
+</section>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode Penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<p>Data-data yang dianalisis dalam penelitian ini bersumber dari berbagai data sekunder. Sebagian besar data yang bersifat kuantitatif diperoleh dari website resmi Badan Pusat Statistik(BPS) Indonesia dan World Bank. Badan Pusat Statistik merupakan lembaga pemerintah yang menyajikan transparansi data kepada masyarakat melalui internet. Di dalam laman BPS, memiliki berbagai informasi yang dibutuhkan dalam penelitian seperti nilai ekspor, nilai impor, total PDB, hingga indikator-indikator yang mempengaruhinya. Data yang dipaparkan oleh BPS akurat karena merupakan data yang telah dikoordinasikan dan terintegrasi oleh berbagai lembaga pemerintah. Selain dari BPS, data yang digunakan dalam penelitian ini bersumber dari beberapa jurnal dan artikel seperti repository.unimar-amni.ac.id, Gramedia.com, maxmanroe.com, dan beberapa artikel lainnya.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="tabel%20data.png" class="img-fluid figure-img" width="420"></p>
+<p></p><figcaption class="figure-caption">image</figcaption><p></p>
+</figure>
+</div>
+<p>Tabel di atas merupakan data nilai ekspor, nilai impor, dan total net-ekspor serta PDB Indonesia dari tahun 2010-2021. Data tersebut diperoleh dari laman resmi Badan Pusat Statistik yang kemudian disusun dalam bentuk tabel.</p>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode Analisis</h3>
+<p>Metode pengumpulan data yang digunakan dalam penelitian ini adalah menggunakan metode penelitian kualitatif dengan menggunakan sumber data sekunder. Metode penelitian kualitatif adalah metode yang bersifat deskriptif dan cenderung menggunakan analisisis mendalam terhadap suatu masalah yang ingin diteliti. Sumber data sekunder merupakan data yang diperoleh secara tidak langsung oleh peneliti. Data sekunder didapatkan dari internet, jurnal, artikel, buku, dan lain-lain. Metode yang digunakan peneliti untuk mengolah data yaitu menggunakan aplikasi RStudio dengan menggunakan <em>package readxl</em> dan <em>tidyverse</em>. Model analisis yang digunakan untuk melakukan penelitian ini adalah dengan menggunakan regresi univariat. Regresi univariat merupakan metode analisis yang digunakan untuk menjelaskan tiap variabel yang digunakan dalam penelitian. Regresi univariat hanya menggunakan satu variabel X sebagai sebab yang mengakibatkan variabel Y. Metode ini dipilih untuk membuktikan apakah ada keterkaitan antara net-ekspor (variabel X) dengan PDB (variabel Y). Model yang digunakan pada penelitian ini yaitu regresi sederhana dengan rumus sebagai berikut:</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span> di mana <span class="math inline">\(y_t\)</span> adalah Total PDB dan <span class="math inline">\(x_t\)</span> adalah Nilai Ekspor-Impor.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan Masalah</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="tabel%20netekspor%20dan%20pdb.png" class="img-fluid figure-img" width="209"></p>
+<p></p><figcaption class="figure-caption">image</figcaption><p></p>
+</figure>
+</div>
+<p>Tabel di atas merupakan total net-ekspor dan total PDB Indonesia selama beberapa tahun. Angka-angka pada tabel ini digunakan untuk melakukan regresi untuk mengetahui apakah pertumbuhan nilai net-ekspor memiliki pengaruh terhadap pertumbuhan PDB.</p>
+<p>Dari data di atas, diperoleh plotting sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">'C:/Users/62822/OneDrive/Desktop/METOPEL/exercise'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'hubungan nilai eksim dan total pdb.xlsx'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span><span class="st">`</span><span class="at">Net-Export</span><span class="st">`</span>,dat<span class="sc">$</span>PDB,<span class="at">xlab=</span><span class="st">"Nilai Ekspor-Impor"</span>,<span class="at">ylab=</span><span class="st">"Total PDB"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Pada plot tersebut, variabel X adalah nilai ekspor-impor (net-ekspor) dan merupakan variabel independen (prediktor). Sedangkan variabel Y adalah total PDB dan merupakan variabel dependen. Plot tersebut membentuk pola heterogen. Pola heterogen merupakan pola yang tidak seragam sehingga tidak dapat membentuk suatu pola tertentu.</p>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis Masalah</h3>
+<p>Berdasarkan regresi yang telah dilakukan, maka diperoleh hasil sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">'C:/Users/62822/OneDrive/Desktop/METOPEL/exercise'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'hubungan nilai eksim dan total pdb.xlsx'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(dat<span class="sc">$</span>PDB<span class="sc">~</span>dat<span class="sc">$</span><span class="st">`</span><span class="at">Net-Export</span><span class="st">`</span>,<span class="at">data=</span>dat)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = dat$PDB ~ dat$`Net-Export`, data = dat)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2159010 -1215826  -139436  1186068  2253049 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)      9283154.52  508677.97  18.250 5.24e-09 ***
+dat$`Net-Export`     -11.78      28.29  -0.416    0.686    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1534000 on 10 degrees of freedom
+Multiple R-squared:  0.01705,   Adjusted R-squared:  -0.08124 
+F-statistic: 0.1735 on 1 and 10 DF,  p-value: 0.6859</code></pre>
+</div>
+</div>
+<p>Dari hasil perhitungan regresi di atas, diketahui bahwa Multiple R-squared adalah 0.01705. Hal ini berarti menunjukkan bahwa net-ekspor mampu menjelaskan sebesar 1,7% total PDB, sisanya sebesar 98,3% dapat dijelaskan oleh variabel atau faktor lain di luar model. Estimasi pada net-ekspor memiliki nilai negatif yang berarti bahwa hubungan X dan Y tidak memiliki hubungan positif. Dengan demikian, maka variabel X (net-ekspor) tidak memiliki pengaruh yang tinggi terhadap pertumbuhan total PDB. Intersepsi pada hasil regresi tersebut menunjukkan bahwa memiliki tingkat signifikan yang tinggi, dengan demikian maka hipotesis yang menyatakan bahwa X memiliki pengaruh terhadap Y dapat diterima. Kelemahan dari data yang dihasilkan pada penelitian ini adalah hasil yang dipaparkan merupakan analisis pribadi dari peneliti terhadap sumber-sumber data sekunder yang diperoleh dari internet sehingga ketepatan hasil penelitian dengan kondisi yang sebenarnya terjadi tidak dapat dipastikan.</p>
+<p>Di bawah ini adalah proses plot dan regresi yang telah dilakukan:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">'C:/Users/62822/OneDrive/Desktop/METOPEL/exercise'</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'readxl'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'tidyverse'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># baca data</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">'hubungan nilai eksim dan total pdb.xlsx'</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># plot X dan Y</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span><span class="st">`</span><span class="at">Net-Export</span><span class="st">`</span>,dat<span class="sc">$</span>PDB,<span class="at">xlab=</span><span class="st">"Nilai Ekspor-Impor"</span>,<span class="at">ylab=</span><span class="st">"Total PDB"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># regresi</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(dat<span class="sc">$</span>PDB<span class="sc">~</span>dat<span class="sc">$</span><span class="st">`</span><span class="at">Net-Export</span><span class="st">`</span>,<span class="at">data=</span>dat)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = dat$PDB ~ dat$`Net-Export`, data = dat)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2159010 -1215826  -139436  1186068  2253049 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)      9283154.52  508677.97  18.250 5.24e-09 ***
+dat$`Net-Export`     -11.78      28.29  -0.416    0.686    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1534000 on 10 degrees of freedom
+Multiple R-squared:  0.01705,   Adjusted R-squared:  -0.08124 
+F-statistic: 0.1735 on 1 and 10 DF,  p-value: 0.6859</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># membuat error</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>dat<span class="sc">$</span>u<span class="ot">&lt;-</span><span class="fu">resid</span>(reg1)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># plot error</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dat<span class="sc">$</span>PDB,dat<span class="sc">$</span>u,<span class="at">xlab=</span><span class="st">"Nilai Ekspor-Impor"</span>,<span class="at">ylab=</span><span class="st">"Total PDB"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Produk Domestik Bruto (PDB) merupakan hasil penjumlahan atas seluruh nilai yang dihasilkan oleh kegiatan produksi barang dan jasa di dalam negeri yang meliputi konsumsi rumah tangga, investasi, konsumsi pemerintah, dan hasil bersih nilai ekspor dikurangi impor. PDB digunakan sebagai tolok ukur pertumbuhan ekonomi di Indonesia. Kegiatan perdagangan internasional turut berperan dalam meningkatkan pertumbuhan ekonomi negara. Berdasarkan penelitian yang telah dilakukan, dengan p-value yang diketahui menunjukkan bahwa sebesar 68,59% kegiatan ekspor dan impor memiliki pengaruh terhadap pertumbuhan PDB Indonesia. Kegiatan ekspor dan impor menunjang pertumbuhan ekonomi cukup baik karena di era globalisasi ini seluruh permintaan barang dan jasa tidak hanya berputar dalam pasar domestic saja melainkan juga pasar global. Dengan memanfaatkan perdagangan internasional, negara mampu membawa pertumbuhan ekonomi yang lebih baik meskipun masih banyak faktor penunjang lain yang tak kalah penting seperti kegiatan investasi. Kedepannya, sebaiknya pemerintah terus giat dalam melakukan ekspor komoditas-komoditas potensial yang dimiliki Indonesia dan mulai mengurangi impor produk-produk yang dapat diproduksi pula di dalam negeri. Peningkatan ekspor dan pengurangan impor merupakan salah satu upaya untuk meningkatkan net-ekspor yang nantinya akan berdampak positif untuk pendapatan domestik negara.</p>
+</section>
+<section id="daftar-pustaka" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="daftar-pustaka"><span class="header-section-number">6</span> Daftar Pustaka</h2>
+<p>Badan Pusat Statistik. Statistik Perdagangan Luar Negeri Indonesia Ekspor 2021, Jilid I. 6 Juli 2022. Diambil 18 Januari 2023, dari https://www.bps.go.id/publication/2022/07/06/d3580f9e1b55a44b265d5ad8/statistik-perdagangan-luar-negeri-indonesia-ekspor-2021-jilid-i.html</p>
+<p>Prawiro, M. (2018). Pengertian PDB (Produk Domestik Bruto), Fungsi, Jenis, dan Cara Menghitung PDB. Diambil 18 Januari 2023, dari https://www.maxmanroe.com/vid/bisnis/pengertian-pdb.html</p>
+<p>Fadhila, F. Pengertian dan Teori Perdagangan Internasional Menurut Para Ahli. Gramedia Blog. Diambil 18 Januari 2023, dari https://www.gramedia.com/literasi/pengertian-dan-teori-perdagangan-internasional/</p>
+<p>Satu Data Perdagangan. Total Ekspor Impor. Diambil 18 Januari 2023, dari https://satudata.kemendag.go.id/data-informasi/perdagangan-luar-negeri/ekspor-impor</p>
+<p>Satu Data Perdagangan. Produk Domestik Bruto (PDB). Diambil 18 Januari 2023, dari https://satudata.kemendag.go.id/data-informasi/perdagangan-dalam-negeri/produk-domestik-bruto</p>
+<p>Badan Pusat Statistik. EKSPOR DAN IMPOR. Diambil 18 Januari 2023, dari https://www.bps.go.id/exim/</p>
+<p>Reza, N.(2020). Pengertian Ekspor Para Ahli. Diambil 18 Januari 2023, dari http://repository.unimar-amni.ac.id/2399/2/9.%20BAB%202%20TINJAUAN%20PUSTAKA%20%281%29.pdf</p>
+<p>Liputan6. Pengertian Ekspor dan Impor Menurut Para Ahli, Ketahui Manfaatnya untuk Negara. 24 Januari 2022. Diambil 18 Januari 2023, dari https://id.berita.yahoo.com/pengertian-ekspor-dan-impor-menurut-104523014.html</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
